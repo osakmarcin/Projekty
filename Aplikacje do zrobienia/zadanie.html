@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Strona internetowa</title>
+</head>
+<body>
+Podaj tekst<input type="text" id="dane">
+<input type="submit" name="button" value="Zatwierdź" onclick="kliknij()">
+<div id="blok"></div>
+
+<script>
+
+function kliknij(){
+var abc=document.getElementById("dane").value;
+blok.innerHTML=abc;
+blok.innerHTML+='<br>';
+blok.innerHTML+="Tekst pogrubiony:"+abc.bold();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Tekst powiększony:"+abc.big();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Tekst pochylont:"+abc.italics();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Tekst zmniejszony:"+abc.small();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Tekst z indeksem dolnym:"+abc.sub();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Tekst przekreślony:"+abc.strike();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Tekst z indeksem górnym:"+abc.sup();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Kolor czcionki:"+abc.fontcolor("red");
+blok.innerHTML+='<br>';
+blok.innerHTML+="Rozmiar czcionki:"+abc.fontsize(20);
+blok.innerHTML+='<br>';
+blok.innerHTML+="Zwracanie znaku pozycji:"+abc.charAt(2);
+blok.innerHTML+='<br>';
+blok.innerHTML+="Zwracanie kdu ASCII:"+abc.charCodeAt();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Przeszukuje łańcuch:"+abc.indexOf();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Przeszukuje łańcuch w poszukiwaniu podłańcucha:"+abc.lastIndexOf();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Zwraca tekst:"+abc.match('asd');
+blok.innerHTML+='<br>';
+blok.innerHTML+="Zwraca podłańcuch:"+abc.substring(3,7);
+blok.innerHTML+='<br>';
+blok.innerHTML+="Wycina z łańcucha liczbę znaków:"+abc.substr(2,4);
+blok.innerHTML+='<br>';
+blok.innerHTML+="Wycina fragment łańcucha:"+abc.slice(3,5);
+blok.innerHTML+='<br>';
+blok.innerHTML+="Dzieli tekst na części:"+abc.split(2,7);
+blok.innerHTML+='<br>';
+blok.innerHTML+="Konwertuje na małe litery:"+abc.toLowerCase();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Konwertuje na duże litery:"+abc.toUpperCase();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Konwertuje na małe litery:"+abc.link();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Konwertuje na małe litery:"+abc.concat('fdf','gdg');
+blok.innerHTML+='<br>';
+blok.innerHTML+="Zamiana w danym łańcuchu:"+abc.replace();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Przeszukuje pod kątem podanego wzorca:"+abc.tekst.search();
+blok.innerHTML+='<br>';
+blok.innerHTML+="Zwraca długość znaków:"+abc.length();
+
+
+
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

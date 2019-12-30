@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Strona internetowa</title>
+</head>
+
+<body>
+Wprowadź hasło<input type="password" id="hasło">
+<input type="submit" name="button" value="Zatwierdź" onclick="kliknij()">
+<div id="wynik"></div>
+<script>
+
+function kliknij(){
+var a=document.getElementById("hasło").value;
+
+if(a.length==0){
+   wynik.innerHTML="Podaj hasło"
+}else if(a.length>=10 && a.match("[a-z]") && a.match("[0-9]") && a.match("[A-Z]")){
+  wynik.innerHTML="Hasło jest poprawne";
+}else if(a.match("[a-z]") || a.match("[0-9]") || a.match("[A-Z]")){
+    wynik.innerHTML="Hasło jest srednie";
+}else{
+    wynik.innerHTML="hasło jest za krótkie";
+}
+}
+
+</script>
+
+
+</body>
+</html>

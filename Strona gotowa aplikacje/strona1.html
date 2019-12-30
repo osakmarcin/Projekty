@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Proste działania</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+    <a href="index.html"><img src="projekt.jpg"></a><br><br><br>
+<b>PROSTE DZIAŁANIA</b><br>
+Podaj pierwszą liczbę:<input type="text" id="liczba1"><br>
+Podaj drugą liczbę:<input type="text" id="liczba2"><br>
+    
+<input type="submit" name="button1" value="DODAWANIE" onclick="x(1)">
+<input type="submit" name="button2" value="ODEJMOWANIE" onclick="x(2)">
+<input type="submit" name="button3" value="MNOŻENIE" onclick="x(3)">
+<input type="submit" name="button4" value="DZIELENIE" onclick="x(4)">
+
+<output id="y1"></output>
+<script>
+function x(x) {
+var a=parseInt(liczba1.value)
+var b=parseInt(liczba2.value)
+var w
+ if (isNaN(a) || isNaN(b)) {
+ w = "Wpisz obie liczby"
+ }
+ else if(x==4 && b==0) {
+ w = "Nie wolno dzielić przez zero"
+ }
+ else { 
+  if (x==1) w=a+b
+  else if(x==2) w=a-b
+  else if(x==3) w=a*b
+  else if(x==4 && b!=0) w=a/b
+  w="Wynik działania wynosi: "+w
+ }
+ 
+y1.value=w
+
+}   
+
+</script>
+
+
+</body>
+
+</html>
